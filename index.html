@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Kidfirul Abid Muqodimi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ffff;
+      --secondary: #8A2BE2;
+      --bg: #0f0f0f;
+      --text: #f0f0f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #121212;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu li a {
+      color: var(--text);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .nav-menu li a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #121212, #1a1a1a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+
+    .hero-content span {
+      color: var(--secondary);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+      color: #fff;
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skills-list span {
+      background: #1e1e1e;
+      padding: 10px 20px;
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid var(--secondary);
+      margin-bottom: 30px;
+    }
+
+    .project-card a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    /* Fade in animasi murni CSS */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kidfirul</div>
+      <ul class="nav-menu">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>Hello World !!! <br><span>Welcome to My Portfolio</span></h1>
+      <a href="#projects" class="btn">My Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>Tentang Saya</h2>
+    <p> Mahasiswa  aktif  semester  4  Program  Studi  Teknik  Informatika  di  Universitas  Nusantara  PGRI  Kediri. 
+        Memiliki  ketertarikan  dalam  pengembangan  web,  sistem  informasi  sederhana,  dan  pembuatan  aplikasi 
+        digital. Terbiasa menyelesaikan proyek-proyek mandiri seperti website statis, form input data, dan CRUD 
+        menggunakan PHP & MySQL. Mampu berpikir kritis dalam menganalisis error, teliti dalam penyusunan 
+        kode  dan  tampilan  UI,  serta  cepat  beradaptasi  dengan  teknologi  baru.  Terbiasa  bekerja  secara  mandiri 
+        maupun  dalam  kelompok.  Saat  ini  sedang  mencari  kesempatan  magang  untuk  memperluas  pengalaman 
+        praktis dan keterampilan profesional di industri teknologi.</p>
+    <a href="CV-Kidfirul Abid Muqodimi.pdf" download class="btn">Download CV</a>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h2>Keahlian</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript (Dasar)</span>
+      <span>PHP</span>
+      <span>MySQL</span>
+      <span>Phyton</span>
+      <span>Bootstrap</span>
+      <span>Vs Code</span>
+      <span>XAMPP</span>
+      <span>GitHub</span>
+      <span>Canva</span>
+      <span>Word</span>
+      <span>Excel</span>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Proyek</h2>
+
+    <div class="project-card">
+      <h3>Project E-Library</h3>
+      <p>Website Perpustakaan Digital. <br>
+        Dengan Fitur Login, Signin, Signup, Fitur Download buku untuk yang sudah login (akses khusus) dan beberapa fitur lainnya<br>
+        Menggunakan Tools HTML, CSS, PHP, MySQL, Bootstrap</p>
+      <a href="https://github.com/kidfirulll/E-Library">Lihat Proyek</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project LaluNay</h3>
+      <p>Website Toko Bunga. <br>
+        Dengan Fitur Pemesanan, Feedback, Promo, Responsive dan Interaktif dan beberapa fitur lainnya<br>
+        Menggunakan Tools HTML, CSS, PHP, MySQL, Bootstrap</p>
+      <a href="https://github.com/kidfirulll/Toko-Bunga">Lihat Proyek</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project UMKM Anyaman Tas</h3>
+      <p>Pengelolaan Database UMKM. <br>
+        Dengan Manfaat efisiensi dalam pencarian dan pengelolaan data, efisiensi pendapatan, pengelolaan bahan baku, penggajian karyawan dan masi banyak lagi<br>
+        Menggunakan Tools XAMPP, dan MySQL dan pengelolan Query</p>
+      <a href="https://github.com/kidfirulll/Database-UMKM-Anyaman-Tas">Lihat Proyek</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project HarvestLog</h3>
+      <p>Website Toko Bunga. <br>
+        Dengan Fitur Pemesanan, Feedback, Promo, Responsive dan Interaktif dan beberapa fitur lainnya<br>
+        Menggunakan Tools HTML, CSS, PHP, MySQL, Bootstrap</p>
+      <a href="https://github.com/kidfirulll/Sistem-Pencatatan-Riwayat-Panen-HarvetsLog-">Lihat Proyek</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project BensinKU</h3>
+      <p>Website Toko Bunga. <br>
+        Dengan Fitur Pemesanan, Feedback, Promo, Responsive dan Interaktif dan beberapa fitur lainnya<br>
+        Menggunakan Tools HTML, CSS, PHP, MySQL, Bootstrap</p>
+      <a href="https://github.com/kidfirulll/Sistem-Pencatatan-Riwayat-Pemakaian-Bensin-atau-Bahan-Bakar-BensinKu-">Lihat Proyek</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Kontak</h2>
+    <p>Instagram: <a href="mailto:kidfyrulll@gmail.com">kidfyrulll@gmail.com</a></p>
+    <p>Email: <a href="mailto:kidfyrulll@gmail.com">kidfyrulll@gmail.com</a></p>
+    <p>Github: <a href="#">linkedin.com/in/kamu</a></p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Kidfirul Abid Muqodimi.</p>
+  </footer>
+</body>
+</html>
